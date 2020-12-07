@@ -37,6 +37,9 @@ class SmartCollection implements Serializeable, \JsonSerializable
     /** @var string|null */
     protected $publishedScope;
 
+    /** @var int */
+    protected $productsCount;
+
     /** @var bool */
     protected $disjunctive;
 
@@ -116,6 +119,14 @@ class SmartCollection implements Serializeable, \JsonSerializable
     public function getPublishedScope()
     {
         return $this->publishedScope;
+    }
+
+    /**
+     * @return int
+     */
+    public function getProductsCount()
+    {
+        return $this->productsCount;
     }
 
     /**
@@ -212,6 +223,14 @@ class SmartCollection implements Serializeable, \JsonSerializable
     public function setPublishedScope($publishedScope)
     {
         $this->publishedScope = $publishedScope;
+    }
+
+     /**
+     * @param int $productsCount
+     */
+    public function setProductsCount($productsCount)
+    {
+        $this->productsCount = $productsCount;
     }
 
     /**

@@ -80,7 +80,8 @@ class SmartCollectionTest extends \PHPUnit\Framework\TestCase
                     "condition": "small"
                 }
             ],
-            "published_scope": "web"
+            "published_scope": "web",
+            "products_count": 100
         }';
     }
 
@@ -108,6 +109,7 @@ class SmartCollectionTest extends \PHPUnit\Framework\TestCase
                 ],
             ],
             'published_scope' => 'web',
+            "products_count" => 100,
         ];
     }
 }
